@@ -31,4 +31,4 @@ jobs:
     - name: Run tests
       run: |
         export PYTHONPATH=Flask-application/test
-        pytest
+        pytest Flask-application/test
