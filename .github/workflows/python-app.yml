@@ -30,5 +30,5 @@ jobs:
         pip install pytest
     - name: Run Flask application
       run: |
-        export PYTHONPATH=Flask-application
+        export PYTHONPATH=Flask-application/app
         pytest test
