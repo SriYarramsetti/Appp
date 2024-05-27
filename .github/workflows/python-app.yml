@@ -28,12 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install Flask
         pip install pytest
-    - name: Run Flask application
+    - name: Run tests
       run: |
-        export PYTHONPATH=Flask-application/app
-        python run
-
-    - name: Test the application
-      run: |
-        export PYTHONPATH=Flask-application/tests
-        pytest
+        export PYTHONPATH=Flask-application
+        pytest Flask-application/test
